@@ -1,0 +1,33 @@
+@model Login
+
+<header class="header-margin">
+    <div class="wrapper flex">
+        <div class="title">
+            <a asp-action="LandingPage" asp-controller="Home"><h1 class="logo">Tying the Knot</h1></a>
+        </div>
+        <div class="link">
+            <ul>
+                <li>
+                    <a asp-action="LandingPage" asp-controller="Home">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+    <h3>Login</h3>
+    <form asp-action="Login" asp-controller="Home" class="flex-col form-width" method="POST">
+        <span asp-validation-for="LogEmail" class="red"></span>
+        <label asp-for="LogEmail"></label>
+        <input asp-for="LogEmail">
+
+        <span asp-validation-for="LogPassword" class="red"></span>
+        <label asp-for="LogPassword"></label>
+        <input asp-for="LogPassword">
+
+        <input type="submit" class="btn" value="Login">
+    </form>
+
+    <a asp-action="Reg" asp-controller="Home" class="account-link">Don't have an account?</a>
+</div>

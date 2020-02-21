@@ -1,0 +1,357 @@
+:root{
+    --Black: #1e1e1e;
+    --BrightRed: #F93B4E;
+    --PastelPink: #DDB8AC;
+    --PastelGray: #D6CBC1;
+    --LightGray: #CDD6D0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: rgb(253, 253, 253);
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--Black);
+    font-family: 'Libre Franklin', sans-serif;
+}
+header{
+    padding: 1.25em 0;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.logo{
+    font-family: 'Abril Fatface', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: var(--BrightRed);
+}
+.header-margin{
+    margin-bottom: 5rem;
+}
+a{
+    text-decoration: none;
+}
+h3{
+    margin-bottom: 2rem;
+}
+ul li{
+    list-style: none;
+}
+.bold{
+    font-weight: bold;
+}
+.flex{    /* Ex. Navigation */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-split{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-center{    /* Ex. Banner, right smack in the center */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-col{    /* Ex. Columns */
+    display: flex;
+    flex-direction: column;
+}
+.red{
+    color: firebrick;
+}
+.col{
+    width: 49%;
+}
+.button{
+    color: #000;
+    padding: 3px 15px;
+    background-color: transparent;
+    font-size: 0.8rem;
+    border: 2px solid #000;
+    transition: all 0.7s ease-out;
+}
+.button:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.dash-title{
+    color: var(--BrightRed);
+}
+.pic{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* NAVIGATION */
+.link ul li{
+    display: inline-block;
+    margin-left: 4rem;
+}
+.link ul li a{
+    color: var(--Black);
+    border-bottom: 1px solid transparent;
+    transition: all 0.7s ease-out;
+}
+.link ul li a:hover{
+    color: var(--BrightRed);
+    border-bottom: 1px solid var(--BrightRed);
+    transition: all 0.3s ease-in;
+}
+#reg{
+    color: #fff;
+    background-color: var(--BrightRed);
+    border: 2px solid var(--BrightRed);
+    padding: 3px 15px;
+    transition: all 0.7s;
+}
+#reg:hover{
+    background-color: transparent;
+    color: var(--BrightRed);
+    transition: all 0.3s;
+}
+
+/* FORMS */
+.form-width{
+    width: 50%;
+}
+form>*{
+    margin-bottom: 12px;
+}
+form input{
+    height: 1.5rem;
+}
+form textarea{
+    height: 5rem;
+}
+form input,
+input,
+form textarea{
+    border: 2px solid var(--Black);
+    outline: 0;
+    font-family: 'Libre Franklin', Courier, monospace;
+    font-size: 0.9rem;
+}
+.btn{
+    background-color: var(--BrightRed);
+    border: 2px solid var(--BrightRed);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: all 0.7s;
+}
+.btn:hover{
+    color: var(--BrightRed);
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* REG/LOG ACCOUNT LINK */
+.account-link{
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--Black);
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--Black);
+}
+
+
+
+/****** LANDING PAGE *****/
+#banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('../Img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+#banner .banner-text{
+    color: #fff;
+}
+#banner .banner-text h1{
+    font-size: 3.25rem;
+    font-weight: 300;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+#banner .banner-btn{
+    padding: 4px 20px;
+    border: 3px solid var(--BrightRed);
+    background-color: var(--BrightRed);
+    font-size: 1.1rem;
+    color: #fff;
+    transition: all 0.7s ease-in;
+}
+#banner .banner-btn:hover,
+#banner .banner-btn:focus{
+    background-color: transparent;
+    transition: all 0.3s;
+}
+#how{
+    margin-bottom: 3rem;
+}
+#how h2{
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#how>.block{
+    background-color: #fff;
+    margin-bottom: 3rem;
+}
+#how .block{
+    width: 80%;
+}
+#how .block p{
+    width: 70%;
+    font-size: 1rem;
+    line-height: 25px;
+}
+#how .block .inner-col{
+    width: 48%;
+    height: 600px;
+}
+.block .block-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+.block .inner-col .landscape{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+hr{
+    width: 1px;
+    height: 350px;
+}
+.shadow{
+    box-shadow: 7px 7px 7px rgb(121, 120, 120);
+}
+#how .checkout{
+    display: block;
+    width: 15%;
+    font-size: 1.2rem;
+    padding: 5px 0;
+    text-align: center;
+    border: 3px solid var(--BrightRed);
+    background-color: var(--BrightRed);
+    color: #fff;
+    font-weight: 700;
+    transition: all 0.7s;
+}
+#how .checkout:hover,
+#how .checkout:focus{
+    background-color: transparent;
+    color: var(--BrightRed);
+    transition: all 0.3s;
+}
+#landing-footer{
+    background-color: var(--BrightRed);
+    height: 230px;
+    color: #fff;
+}
+#landing-footer h4{
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+#landing-footer .footer-title h1{
+    font-family: 'Abril Fatface', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #fff;
+}
+#landing-footer .challenges{
+    width: 50%;
+}
+
+
+
+/***** DASHBOARD PAGE *****/
+.reg-btn{
+    display: inline-block;
+    border: 2px solid var(--BrightRed);
+    background-color: var(--BrightRed);
+    padding: 3px 15px;
+    color: #fff;
+    font-size: 0.85rem;
+    margin-left: 5px;
+    margin-bottom: 1.25rem;
+    transition: all 0.7s ease-in;
+}
+.reg-btn:hover{
+    background-color: transparent;
+    color: var(--BrightRed);
+    transition: all 0.3s ease-out;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table th{
+    padding: 10px 0;
+    border: 5px solid #fff;
+    background-color: #DDB8AC;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+table td{
+    border: 5px solid #fff;
+    padding: 4px 0;
+    text-align: center;
+}
+tr:nth-child(odd){
+    background-color: #EFDED9;
+    color: var(--Black);
+}
+.couple{
+    color: var(--Black);
+    border-bottom: 1px solid var(--Black);
+    /* padding-bottom: 1px; */
+}
+.table-btn{
+    padding: 2px 10px;
+    border: 0;
+    position: relative;
+    color: #fff;
+    top: 7px;
+    outline: 0;
+    font-size: 0.85rem;
+    font-weight: 300;
+    border-radius: 3px;
+    background-color: var(--BrightRed);
+}
+
+
+
+/***** WEDDING DETAILS *****/
+.wedding-info>*,
+.guests{
+    margin-bottom: 10px;
+}
+.bold-title{
+    font-weight: 800;
+}

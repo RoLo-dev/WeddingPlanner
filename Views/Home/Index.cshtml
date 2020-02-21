@@ -1,0 +1,23 @@
+﻿<header class="header-margin">
+    <div class="wrapper flex">
+        <div class="title">
+            <a asp-action="LandingPage" asp-controller="Home"><h1 class="logo">Tying the Knot</h1></a>
+        </div>
+        <div class="link">
+            <ul>
+                <li>
+                    <a asp-action="LandingPage" asp-controller="Home">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper flex-split">
+    <div class="col">
+        <partial name="Register"/>
+    </div>
+    <div class="col">
+        <partial name="Login"/>
+    </div>
+</div>

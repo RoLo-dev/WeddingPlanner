@@ -1,0 +1,89 @@
+<header id="landing-header">
+    <div class="wrapper flex" data-aos="fade-down">
+        <div class="title">
+            <a asp-action="LandingPage" asp-controller="Home"><h1 class="logo">Tying the Knot</h1></a>
+        </div>
+        <div class="link">
+            <ul>
+                <li>
+                    <a href="#how">How to Use</a>
+                </li>
+                <li>
+                    <a asp-action="Log" asp-controller="Home">Login</a>
+                </li>
+                <li>
+                    <a asp-action="Reg" asp-controller="Home" id="reg">Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div id="banner">
+    <div class="banner-text wrapper" data-aos="fade-right">
+        <h1>Tying the Knot: Wedding Planning for Everyone</h1>
+        <a asp-action="Reg" asp-controller="Home" class="banner-btn">Get Started</a>
+    </div>
+</div>
+
+<section id="how" class="wrapper">
+    <h2>How to Use</h2>
+
+    <div class="block wrapper flex shadow" data-aos="fade-up">
+        <div class="inner-col flex-center">
+            <h4 class="block-title">Register</h4>
+            <p>To get started, begin by registering so you can create an account or if you have an account already you can login</p>
+        </div>
+        <hr>
+        <div class="inner-col">
+            <img src="Img/Register.png" class="pic">
+        </div>
+    </div>
+
+    <div class="block wrapper flex shadow" data-aos="fade-up">
+        <div class="inner-col flex-center">
+            <img src="Img/Dashboard.png" class="landscape">
+        </div>
+        <hr>
+        <div class="inner-col flex-center">
+            <h4 class="block-title">Dashboard</h4>
+            <p>After, you will be redirected to your dashboard, you will see other events where you're given the option to rsvp to a wedding or you can create a new wedding event</p>
+        </div>
+    </div>
+
+    <div class="block wrapper flex shadow" data-aos="fade-up">
+        <div class="inner-col flex-center">
+            <h4 class="block-title">Wedding Details</h4>
+            <p>Once creating a new wedding event, you will be redirected to the wedding info page to view all the details. You can always log back in to view the guests that will be attending the wedding</p>
+        </div>
+        <hr>
+        <div class="inner-col flex-center">
+            <img src="Img/Details.png" class="landscape">
+        </div>
+    </div>
+
+    <a asp-action="Reg" asp-controller="Home" class="checkout wrapper">Check it out</a>
+
+</section>
+
+<section id="landing-footer" class="flex-center">
+    <div class="wrapper flex">
+
+         <div class="footer-title">
+            <a asp-action="LandingPage" asp-controller="Home"><h1 class=>Tying the Knot</h1></a>
+        </div>
+        <div class="challenges">
+            <h4>Challenges</h4>
+            <p>My first road block was setting up my models that will later create tables in MySQL where all the database will be stored. From there, the second challenge was querying information from each table.</p>
+        </div>
+        <div class="technology">
+            <h4>Technology</h4>
+            <ul>
+                <li>- C#</li>
+                <li>- ASP.Net</li>
+                <li>- MySQL</li>
+            </ul>
+        </div>
+
+    </div>
+</section>

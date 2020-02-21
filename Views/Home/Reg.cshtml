@@ -1,0 +1,45 @@
+@model User
+
+<header class="header-margin">
+    <div class="wrapper flex">
+        <div class="title">
+            <a asp-action="LandingPage" asp-controller="Home"><h1 class="logo">Tying the Knot</h1></a>
+        </div>
+        <div class="link">
+            <ul>
+                <li>
+                    <a asp-action="LandingPage" asp-controller="Home">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+    <h3>Register</h3>
+    <form asp-action="Register" asp-controller="Home" class="flex-col form-width" method="POST">
+        <span asp-validation-for="FirstName" class="red"></span>
+        <label asp-for="FirstName"></label>
+        <input type="text" asp-for="FirstName">
+
+        <span asp-validation-for="LastName" class="red"></span>
+        <label asp-for="LastName"></label>
+        <input type="text" asp-for="LastName">
+
+        <span asp-validation-for="Email" class="red"></span>
+        <label asp-for="Email"></label>
+        <input asp-for="Email">
+
+        <span asp-validation-for="Password" class="red"></span>
+        <label asp-for="Password"></label>
+        <input asp-for="Password">
+
+        <span asp-validation-for="Confirm" class="red"></span>
+        <label asp-for="Confirm"></label>
+        <input asp-for="Confirm">
+
+        <input type="submit" class="btn" value="Register">
+    </form>
+
+    <a asp-action="Log" asp-controller="Home" class="account-link">Already have an account?</a>
+</div>
