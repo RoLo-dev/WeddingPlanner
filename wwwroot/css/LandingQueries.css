@@ -1,0 +1,265 @@
+@media screen and (max-width: 1200px){
+    html{
+        font-size: 16px;
+    }
+    #how .block{
+        width: 90%;
+    }
+    #how .checkout{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #banner .banner-text h1{
+        margin-bottom: 1.5rem;
+    }
+    #banner .banner-btn{
+        padding: 5px 38px;
+    }
+    #banner .banner-text h1{
+        font-size: 2.85rem;
+    }
+
+
+    #how .block{
+        margin-bottom: 4rem;
+        width: 93%;
+    }
+    #how .block .inner-col{
+        height: 500px;
+    }
+    #how .checkout{
+        width: 25%;
+    }
+    hr{
+        height: 300px;
+    }
+
+    /* Footer */
+    #landing-footer{
+        height: auto;
+    }
+    #landing-footer .mobile-wrap{
+        padding: 1.5rem 0;
+        display: flex;
+        flex-direction: column !important;
+    }
+    #landing-footer .mobile-wrap .footer-title,
+    #landing-footer .mobile-wrap .challenges{
+        margin-bottom: 3rem;
+    }
+    #landing-footer .mobile-wrap .challenges{
+        width: 100%;
+    }
+    .mobile-wrap .challenges h4{
+        text-align: center;
+    }
+    .mobile-wrap .challenges p{
+        line-height: 24px;
+    }
+    .mobile-wrap .technology ul li{
+        margin-bottom: 8px;
+    }
+
+    /* WeddingDetails page */
+    .wedDetails{
+        display: flex;
+        flex-direction: column;
+    }
+    .wedDetails .col{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .wedDetails iframe{
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    html{
+        font-size: 14px;
+    }
+
+     #banner .banner-btn{
+        padding: 5px 50px;
+    }
+
+
+    #banner .banner-text h1{
+        width: 75%;
+    }
+
+
+    #how .block{
+        width: 100%;
+    }
+    #how .block .inner-col{
+        height: 400px;
+    }
+    hr{
+        height: 250px;
+    }
+    #how .checkout{
+        width: 30%;
+    }
+
+
+    /* ALL FORMS */
+    .form-width{
+        width: 100%;
+    }
+    form input{
+        height: 2rem;
+    }
+
+    /* Index.cshtml - that contains two forms */
+    .regLog{
+        display: flex;
+        flex-direction: column;
+    }
+    .regLog .col{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    /* Navigation */
+    #landing-header .link{
+        display: none;
+    }
+    #open{
+        display: block;
+        font-size: 1.4rem;
+        transition: color 0.5s ease;
+    }
+    #open:active{
+        transform: scale(0.95);
+    }
+    #open:hover{
+        color: #F93B4E;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    #mobileNav{
+        height: 100vh;
+        width: 330px;
+        background-color: #F93B4E;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(330px);
+        transition: all 0.3s ease-out;
+    }
+    #mobileNav.show{
+        top: 0;
+        right: 0;
+        transform: translate(0);
+        transition: transform 0.1s ease-in;
+    }
+    #close{
+        color: #fff;
+        font-size: 2.5rem;
+        position: absolute;
+        top: 25px;
+        left: 35px;
+        transition: color 0.5s ease-out;
+    }
+    #close:hover{
+        cursor: pointer;
+        color: #1e1e1e;
+        transition: 0.2s ease-in;
+    }
+    .mobileLinks li{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .mobileLinks li:active{
+        transform: scale(0.96);
+    }
+    .mobileLinks li a{
+        color: #fff;
+        font-size: 1.55rem;
+        transition: color 0.5s ease-out;
+    }
+    .mobileLinks li a:hover{
+        color: #1e1e1e;
+        transition: color 0.3s ease-in;
+    }
+
+    /* Banner */
+    #banner{
+        height: 85vh;
+    }
+
+
+    /* WeddingDetails page */
+    .wedDetails-head .title h1{
+        width: 70%;
+    }
+    .wedDetails-head .link ul li{
+        margin-left: 0 !important;
+        margin-right: 4rem;
+    }
+    .wedDetails-head .link ul li:last-child{
+        margin-right: 0;
+    }
+    .wedDetails iframe{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 625px){
+    #banner .banner-text h1{
+        width: 100%;
+        height: 40%;
+    }
+
+
+    #how .block{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    #how .block .inner-col{
+        width: 100%;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .block .block-title{
+        margin-top: 3rem;
+    }
+    #how .block .inner-col p{
+        width: 90%;
+    }
+    hr{
+        width: 80%;
+        height: 1px;
+        margin: 1rem auto;
+    }
+
+
+    #how .checkout{
+        width: 80%;
+    }
+
+    /* New Wedding Details page */
+    .newWed .title h1{
+        width: 70%;
+    }
+    .newWed .link ul li{
+        margin-left: 0;
+        margin-right: 4rem;
+    }
+    .newWed .link ul li:last-child{
+        margin-right: 0;
+    }
+}

@@ -78,6 +78,9 @@ ul li{
     border: 2px solid #000;
     transition: all 0.7s ease-out;
 }
+.button:active{
+    transform: scale(0.96);
+}
 .button:hover{
     background-color: #000;
     color: #fff;
@@ -108,6 +111,9 @@ ul li{
     color: var(--BrightRed);
     border-bottom: 1px solid var(--BrightRed);
     transition: all 0.3s ease-in;
+}
+#open{
+    display: none;
 }
 #reg{
     color: #fff;
@@ -153,6 +159,9 @@ form textarea{
     text-transform: uppercase;
     transition: all 0.7s;
 }
+.btn:active{
+    transform: scale(0.96);
+}
 .btn:hover{
     color: var(--BrightRed);
     background-color: transparent;
@@ -172,6 +181,9 @@ form textarea{
 
 
 /****** LANDING PAGE *****/
+#mobileNav{
+    display: none;
+}
 #banner{
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('../Img/banner.jpg');
     background-position: center;
@@ -193,7 +205,7 @@ form textarea{
     margin-bottom: 1rem;
 }
 #banner .banner-btn{
-    padding: 4px 20px;
+    padding: 4px 30px;
     border: 3px solid var(--BrightRed);
     background-color: var(--BrightRed);
     font-size: 1.1rem;
@@ -204,6 +216,9 @@ form textarea{
 #banner .banner-btn:focus{
     background-color: transparent;
     transition: all 0.3s;
+}
+#banner .banner-btn:active{
+    transform: scale(0.96);
 }
 #how{
     margin-bottom: 3rem;
@@ -216,11 +231,9 @@ form textarea{
     text-align: center;
     margin-bottom: 4rem;
 }
-#how>.block{
+#how .block{
     background-color: #fff;
     margin-bottom: 3rem;
-}
-#how .block{
     width: 80%;
 }
 #how .block p{
