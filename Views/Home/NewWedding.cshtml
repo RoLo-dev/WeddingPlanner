@@ -1,32 +1,38 @@
 @model Wedding
 
-<header class="header-margin" >
+<header class="header-margin newWed" >
     <div class="wrapper flex">
         <div class="title">
-            <h1>Plan Your Wedding</h1>
+            <h1 class="dash-title">Plan Your Wedding</h1>
         </div>
         <div class="link">
-            <a asp-action="Dashboard" asp-controller="Home">Dashboard</a>
-            <a asp-action="Logout" asp-controller="Home">Logout</a>
+            <ul>
+                <li>
+                    <a asp-action="Dashboard" asp-controller="Home">Dashboard</a>
+                </li>
+                <li>
+                    <a asp-action="Logout" asp-controller="Home">Logout</a>
+                </li>
+            </ul>
         </div>
     </div>
 </header>
 
 <div class="wrapper">
     <form asp-action="CreateWedding" asp-controller="Home" class="flex-col form-width" method="POST">
-        <span asp-validation-for="WedderOne"></span>
+        <span asp-validation-for="WedderOne" class="red"></span>
         <label asp-for="WedderOne"></label>
         <input type="text" asp-for="WedderOne">
 
-        <span asp-validation-for="WedderTwo"></span>
+        <span asp-validation-for="WedderTwo" class="red"></span>
         <label asp-for="WedderTwo"></label>
         <input type="text" asp-for="WedderTwo">
 
-        <span asp-validation-for="Date"></span>
+        <span asp-validation-for="Date" class="red"></span>
         <label asp-for="Date"></label>
         <input asp-for="Date">
 
-        <span asp-validation-for="Address"></span>
+        <span asp-validation-for="Address" class="red"></span>
         <label asp-for="Address"></label>
         <input type="text" asp-for="Address">
 

@@ -6,16 +6,21 @@
     <title>Wedding Planner</title>
 
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Franklin:300,800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <link rel="stylesheet" href="~/css/style.css" />
-    @RenderSection("usage", required: false)
+    <link rel="stylesheet" href="~/css/LandingQueries.css">
+    @* @RenderSection("landing", required: false) *@
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
 </head>
 <body>
     @RenderBody()
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="~/js/site.js"></script>
     <script>
         AOS.init({
             offset: 300,
