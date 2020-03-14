@@ -31,17 +31,30 @@ namespace WeddingPlanner2.Controllers
         }
 
 
-        [HttpGet("register/login")]
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-
         [HttpGet("register")]
         public IActionResult Reg()
         {
             return View();
+        }
+        [HttpPost("register")]
+        public IActionResult Reg(User newUser)
+        {
+            if(ModelState.IsValid)
+            {
+                if(dbContext.Users.Any(u => u.Email == newUser.Email))
+                {
+                    ModelState.AddModelError("Email", "Email has been taken");
+                    return View("Reg");
+                } else{
+                    PasswordHasher<User> Hasher = new PasswordHasher<User>();
+                    newUser.Password = Hasher.HashPassword(newUser, newUser.Password);
+                    dbContext.Add(newUser);
+                    dbContext.SaveChanges();
+                    UserSession = newUser.UserId;
+                    return RedirectToAction("Dashboard");
+                }
+            }
+            return View("Reg");
         }
 
 
@@ -50,8 +63,37 @@ namespace WeddingPlanner2.Controllers
         {
             return View();
         }
+        [HttpPost("login")]
+        public IActionResult Log(Login user)
+        {
+            if(ModelState.IsValid)
+            {
+                User UserExists = dbContext.Users.FirstOrDefault(r => r.Email == user.LogEmail);
+                if(UserExists == null)
+                {
+                    ModelState.AddModelError("LogEmail", "Invalid credentials");
+                    return View("Log");
+                }
+                var Hasher = new PasswordHasher<Login>();
+                var Result = Hasher.VerifyHashedPassword(user, UserExists.Password, user.LogPassword);
+                if(Result == 0)
+                {
+                    ModelState.AddModelError("LogPassword", "Invalid Credentials");
+                    return View("Log");
+                } else{
+                    UserSession = UserExists.UserId;
+                    return RedirectToAction("Dashboard");
+                }
+            }
+            return View("Log");
+        }
 
 
+        [HttpGet("register/login")]
+        public IActionResult Index()
+        {
+            return View();
+        }
         [HttpPost("register/user")]
         public IActionResult Register(User newUser)
         {
