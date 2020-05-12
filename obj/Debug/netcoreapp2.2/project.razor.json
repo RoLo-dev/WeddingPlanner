@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/WeddingPlanner2.csproj",
+  "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/WeddingPlanner2.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,78 +2961,78 @@
   "RootNamespace": "WeddingPlanner2",
   "Documents": [
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Home/Dashboard.cshtml",
-      "TargetPath": "Views/Home/Dashboard.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Shared/_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Home/NewWedding.cshtml",
-      "TargetPath": "Views/Home/NewWedding.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Home/Reg.cshtml",
-      "TargetPath": "Views/Home/Reg.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Home/Dashboard.cshtml",
+      "TargetPath": "Views\\Home\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Home/log.cshtml",
-      "TargetPath": "Views/Home/log.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Home/Login.cshtml",
-      "TargetPath": "Views/Home/Login.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Home/Index.cshtml",
-      "TargetPath": "Views/Home/Index.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Home/LandingPage.cshtml",
-      "TargetPath": "Views/Home/LandingPage.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Home/NewWedding.cshtml",
+      "TargetPath": "Views\\Home\\NewWedding.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views/Shared/_ValidationScriptsPartial.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Home/Login.cshtml",
+      "TargetPath": "Views\\Home\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/_ViewImports.cshtml",
-      "TargetPath": "Views/_ViewImports.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Home/Register.cshtml",
+      "TargetPath": "Views\\Home\\Register.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Shared/Error.cshtml",
-      "TargetPath": "Views/Shared/Error.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Home/WeddingDetails.cshtml",
+      "TargetPath": "Views\\Home\\WeddingDetails.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views/Shared/_Layout.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Home/Reg.cshtml",
+      "TargetPath": "Views\\Home\\Reg.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Home/WeddingDetails.cshtml",
-      "TargetPath": "Views/Home/WeddingDetails.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Home/log.cshtml",
+      "TargetPath": "Views\\Home\\log.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Shared/_CookieConsentPartial.cshtml",
-      "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/_ViewStart.cshtml",
-      "TargetPath": "Views/_ViewStart.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/Views/Home/Register.cshtml",
-      "TargetPath": "Views/Home/Register.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/Views/Home/LandingPage.cshtml",
+      "TargetPath": "Views\\Home\\LandingPage.cshtml",
       "FileKind": "mvc"
     }
   ],
