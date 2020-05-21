@@ -12155,11 +12155,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/WeddingPlanner2.csproj",
+      "projectUniqueName": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/WeddingPlanner2.csproj",
       "projectName": "WeddingPlanner2",
-      "projectPath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/WeddingPlanner2.csproj",
+      "projectPath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/WeddingPlanner2.csproj",
       "packagesPath": "/Users/rolandolopantzi/.nuget/packages/",
-      "outputPath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/WeddingPlanner2/obj/",
+      "outputPath": "/Users/rolandolopantzi/Documents/GitHub/CodingDojo/WeddingPlanner/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
